@@ -127,7 +127,7 @@ public class UserController {
             user.setPassword(userForm.getPassword());
             user.setRole(userForm.getRole());
             System.out.println(user);
-            userService.save(user);
+            userService.update(user);
         } catch (ParseException ex) {
             Logger.getLogger(UserController.class.getName()).log(Level.SEVERE, null, ex);
         }
